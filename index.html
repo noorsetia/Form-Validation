@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-translate="signupTitle">Sign Up</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="animated-bg">
+        <div class="container">
+            <!-- Language Selector -->
+            <div class="language-selector">
+                <label for="languageSelector">🌍</label>
+                <select id="languageSelector">
+                    <option value="en">English</option>
+                    <option value="hi">हिन्दी</option>
+                </select>
+            </div>
+
+            <h1 data-translate="signup">Sign Up</h1>
+            <form id="signupForm">
+                <div class="input-group">
+                    <label for="name" data-translate="fullName">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error" id="nameError"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="email" data-translate="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error" id="emailError"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="contact" data-translate="contactNumber">Contact Number:</label>
+                    <input type="text" id="contact" name="contact" required placeholder="+91 9876543210">
+                    <span class="error" id="contactError"></span>
+                </div>
+
+                <div class="input-group">
+                    <label for="password" data-translate="password">Password:</label>
+                    <div class="password-container">
+                        <input type="password" id="password" name="password" required>
+                        <button type="button" class="togglePassword">👁️</button>
+                    </div>
+                    <span class="error" id="passwordError"></span>
+                </div>
+
+                <button type="submit">Sign Up</button>
+                <p class="login-link">Already have an account? <a href="login.html">Login here</a></p>
+            </form>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="language2.js"></script>
+
+</body>
+</html>

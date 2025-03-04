@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Full-Screen Background with GIF */
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: url('animation.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Login, Signup, and Reset Password Box */
+.container {
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.85); /* Transparent white box */
+    padding: 35px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 450px;
+    text-align: center;
+    margin: 100px auto;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.error {
+    color: red;
+    font-size: 12px;
+    visibility: hidden;
+}
+
+.login-link {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 16px;
+    color: black;
+    display: block;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
+
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.password-container input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px; /* Ensure space for the eye icon */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box; /* Prevents overflow */
+}
+
+.password-container button {
+    position: absolute;
+    left: 170px;
+    top: 30%;
+    transform: translateY(-50%); /* Align vertically */
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    padding: 5px;
+    color: #555;
+}
+
+.password-container button:focus {
+    outline: none;
+}
+
+/* Language Selector */
+.language-selector {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.language-selector label {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+#languageSelector {
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+}

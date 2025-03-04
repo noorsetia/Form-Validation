@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <div class="dashboard-container">
+        <header>
+
+            <label for="languageSelector">🌍</label>
+            <select id="languageSelector">
+                <option value="en">English</option>
+                <option value="hi">हिन्दी</option>
+            </select>
+            
+            <h1 id="dashboardTitle">Welcome to Your Dashboard</h1>
+        </header>
+
+        <section class="content">
+            <h2>Hello, <span id="userEmail"></span>!</h2>
+            <p id="dashboardDesc">Here you can manage your account and explore features.</p>
+        
+            <!-- Logout button placed inside a div for alignment -->
+            <div class="logout-container">
+                <button id="logoutBtn">Logout</button>
+            </div>
+        </section>
+    </div>
+
+    <script src="dashboard.js" defer></script>
+    <script src="language.js" defer></script>
+
+</body>
+</html>

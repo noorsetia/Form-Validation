@@ -1,0 +1,84 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Full-Screen Background with GIF */
+body, html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background: url('animation.gif') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.dashboard-container {
+    background: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#dashboardTitle {
+    margin: 0;
+    font-size: 33px;
+}
+
+/* Dashboard content */
+.content {
+    margin-top: 20px;
+
+}
+
+h2 {
+    color: #007bff;
+    margin-bottom: 25px;
+    margin-top: 15px;
+}
+
+#dashboardDesc {
+    font-size: 25px;
+    margin-bottom: 32px; /* Adds spacing below the paragraph */
+    margin-top: 5px;
+}
+
+/* Logout button container */
+.logout-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Adds space between the paragraph and button */
+}
+
+/* Logout button styling */
+#logoutBtn {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%; /* Make it full width for a clean look */
+    max-width: 200px; /* Prevent it from being too wide */
+}
+
+#logoutBtn:hover {
+    background-color: #c82333;
+}
